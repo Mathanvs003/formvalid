@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="form.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="undraw_access-account_idy0 (1).svg">
+        </div>
+        <div class="right">
+            <form id="form" >
+                <h1>Register</h1>
+
+                <div class="input-group">
+                    <label for="name" >Name</label>
+                    <input type="text" id="name" onchange="validates()">
+                    <div class="error" hidden>required</div>
+                    <div class="string" hidden>Don't use the values</div>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="mail" id="email" onchange="validates1()">
+                    <div class="error1" hidden>required</div>
+                    <div class="mail" hidden>Please enter the valid email</div>
+                </div>
+
+                <div class="input-group">
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" onchange="validates2()">
+                    <div class="error2" hidden>required</div>
+                    <div class="pass1" hidden>enter above 8 characters</div>
+                </div>
+
+                <div class="input-group">
+                    <label for="cpass">Confirm Password</label>
+                    <input type="password" id="cpass" onchange="validates3()">
+                    <div class="error3" hidden>required</div>
+                    <div class="pass2" hidden>check the password</div>
+                </div>
+
+                <div class="submit">
+                     <button>Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
